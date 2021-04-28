@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Okay-cms</title>
+    <link rel="preconnect" type="text/css" href="https://fonts.gstatic.com">
+    <link type="text/css" href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="css/fonts.min.css">
+    <link type="text/css" rel="stylesheet" href="css/my-font.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/slick.min.css"/>
+    <link rel="stylesheet" type="text/css" href="css/style.min.css">
+    <link rel="stylesheet" type="text/css" href="css/media.min.css">
+</head>
+<body>
+
+    <header id="header" class="header">
+        <nav class="header__navigation">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5">
+                            <ul class="header-menu_left">
+                                <li class="header-menu_left__item"><a href="#" class="header-menu_left__link">О магазине</a></li>
+                                <li class="header-menu_left__item"><a href="#" class="header-menu_left__link">Baby клуб</a></li>
+                                <li class="header-menu_left__item"><a href="#" class="header-menu_left__link">Доставка и оплата</a></li>
+                                <li class="header-menu_left__item"><a href="#" class="header-menu_left__link">Новости</a></li>
+                                <li class="header-menu_left__item"><a href="#" class="header-menu_left__link">Контакты</a></li>
+                            </ul>
+                    </div>
+                    <div class="col-lg-6 offset-lg-1">
+                        <ul class="header-menu_right">
+                            <li id="sign-in" class="header-menu_right__item sign-in"><img src="icons/icon_01.png" class="sign-in-icon icon" alt="sign in icon"><a href="#" class="header-menu_right__link">Вход</a></li>
+                            <li class="header-menu_right__item"><span class="icon-heart-o icon"></span><a href="#" class="header-menu_right__link wishes">Избранное</a><span class="header-menu_right__counter-wish counter"></span></li>
+                            <li class="header-menu_right__item  header-menu_right__item_active"><img src="icons/icon_03.png" class="cart-icon icon" alt="cart icon"><a href="#" class="header-menu_right__link cart">Корзина</a><span class="header-menu_right__counter-cart counter"></span></li>
+                        </ul>
+                        <div class="callback-header">
+                            <a class="callback-header__link" href="tel:0445938239">(044) 374 03 83</a>
+                            <a class="callback-header__link" href="tel:0800507712">0 800 50 77 40</a>
+                            <button class="callback-header__callback-button">Обратный звонок</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section id="subheader" class="subheader">
+        <div class="subheader__content-wrapper">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5">
+                        <div class="subheader__search-field">
+                            <ul class="subheader__search-button">
+                                <li>
+                                    <img src="icons/icon_04.png" alt="search icon">
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="subheder-callback">
+                            <div class="callback-wrapper">
+                                <a class="subheder__link" href="tel:0445938239">(044) 593 82 39</a>
+                                <a class="subheder__link" href="tel:0800507712">0 800 50 77 12</a>
+                            </div>
+                            <button class="subheder__callback-button">Обратный звонок</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="subheder__logo">
+                            <img src="img/logo.png" alt="logo" class="logo">
+                        </div>
+                    </div>
+                    <div class="col-lg-3 offset-1">
+                        <div class="subheder__search">
+                            <input class="search-input" type="text" placeholder="Поиск">
+                            <span class="icon-search"></span>
+                        </div>
+
+                        <div class="subheader-wrpapper">
+                            <ul class="subheader-nav">
+                                <li class="subheader-nav__item"><img src="icons/icon_02.png" class="heart-icon icon" alt="heart icon"><a href="#" class="subheader-nav__link wishes"></a><span class="header-menu_right__counter-wish counter"></span></li>
+                                <li id="sign-in" class="subheader-nav__item sign-in"><img src="icons/icon_01.png" class="sign-in-icon icon" alt="sign in icon"><a href="#" class="header-menu_right__link"></a></li>
+                                <li class="subheader-nav__item"><img src="icons/icon_03.png" class="cart-icon icon" alt="cart icon"><a href="#" class="subheader-nav__link cart"></a><span class="header-menu_right__counter-cart counter"></span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="second-header" class="second-header">
+        <nav class="second-header__navigation">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <ul class="second-menu">
+                            <li class="second-menu__item"><a href="#" class="second-menu__link">Игры и Игрушки</a></li>
+                            <li class="second-menu__item"><a href="#" class="second-menu__link">Школа и Творчество</a></li>
+                            <li class="second-menu__item"><a href="#" class="second-menu__link">Одежда</a></li>
+                            <li class="second-menu__item"><a href="#" class="second-menu__link">Обувь</a></li>
+                            <li class="second-menu__item"><a href="#" class="second-menu__link">Кухня и кормление</a></li>
+                            <li class="second-menu__item"><a href="#" class="second-menu__link">Гигиена и Уход</a></li>
+                            <li class="second-menu__item"><a href="#" class="second-menu__link">Спорт и Отдых</a></li>
+                            <li class="second-menu__item"><a href="#" class="second-menu__link">Детская и Коляски</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </section>
+
+    <section class="path">
+        <div class="path__content-wrapper">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4">
+                        
+                        <ul class="path__content">
+                            <li class="path__item">Panama.ua</li>
+                            <li class="path__item path-arrow">></li>
+                            <li class="path__item">Игрушки</li>
+                            <li class="path__item path-arrow">></li>
+                            <li class="path__item">Десткие конструкторы</li>
+                            <li class="path__item path-arrow">></li>
+                            <li class="path__item">LEGO</li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <main id="main" class="main">
+        <div class="container">
+            <div class="product-about row">
+                <div class="product-about__left col-12 col-lg-6">
+                    <div class="slider-column">
+                        <div class="carousel">
+                            <div class="carousel__item">
+                                <img src="img/slide_01.png" class="carousel__slide" alt="Constructor LEGO 1">
+                            </div>
+                            <div class="carousel__item">
+                                <img src="img/slide_02.png" class="carousel__slide" alt="Constructor LEGO 2">
+                            </div>
+                            <div class="carousel__item">
+                                <img src="img/slide_03.png" class="carousel__slide" alt="Constructor LEGO 3">
+                            </div>
+                            <div class="carousel__item">
+                                <img src="img/slide_04.png" class="carousel__slide" alt="Constructor LEGO 4">
+                            </div>
+                            <div class="carousel__item">
+                                <img src="img/slide_05.png" class="carousel__slide" alt="Constructor LEGO 5">
+                            </div>
+                            <div class="carousel__item">
+                                <img src="img/slide_06.png" class="carousel__slide" alt="Constructor LEGO 6">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="slider-row">
+                        <div class="carousel-horizontal">
+                            <div class="carousel-horizontal__item">
+                                <img id="carousel-horizontal__slide-1" src="img/slide_01.png" class="carousel-horizontal__slide" alt="Constructor LEGO big 1">
+                            </div>
+                            <div class="carousel-horizontal__item">
+                                <img id="carousel-horizontal__slide-2" src="img/slide_02.png" class="carousel-horizontal__slide" alt="Constructor LEGO big 2">
+                            </div>
+                            <div class="carousel-horizontal__item">
+                                <img id="carousel-horizontal__slide-3" src="img/slide_03.png" class="carousel-horizontal__slide" alt="Constructor LEGO big 3">
+                            </div>
+                            <div class="carousel-horizontal__item">
+                                <img id="carousel-horizontal__slide-4" src="img/slide_04.png" class="carousel-horizontal__slide" alt="Constructor LEGO big 4">
+                            </div>
+                            <div class="carousel-horizontal__item">
+                                <img id="carousel-horizontal__slide-5" src="img/slide_05.png" class="carousel-horizontal__slide" alt="Constructor LEGO big 5">
+                            </div>
+                            <div class="carousel-horizontal__item">
+                                <img id="carousel-horizontal__slide-6" src="img/slide_06.png" class="carousel-horizontal__slide" alt="Constructor LEGO big 6">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-about__right col-12 col-lg-6">
+                    <div class="product-main-info">
+                        <ul class="product-categories">
+                            <li class="product-categories__item">
+                                <p class="product__category">Lego Creator</p>
+                            </li>
+                        </ul>
+
+                        <div class="product-about__heading">
+                            <h3 class="product-about__title">Домик на холме, большая коробка с деталями и кубиками</h3>
+                        </div>
+
+                        <div class="product-about__block">
+                            <div class="product-about__wrapper">
+                                <div class="product-info_left">
+                                    <div class="product-trade">
+                                        <div class="product-prices__inner">
+                                            <div class="product-about__price-wrapper">
+                                                <p class="product-prices__price_big">5748</p>
+                                                <p class="product-prices__currency_big">грн.</p>
+                                            </div>
+                                            <div class="product-about__price-wrapper">
+                                                <p class="product-prices__price_small">6574</p>
+                                                <p class="product-prices__currency_small">грн.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="product-about-rating">
+                                        <div class="product-about-rating__items">
+                                            <input id="product-about-rating__5" type="radio" class="product-about-rating__item" name="product-about-rating" value="5">
+                                            <label for="product-about-rating__5" class="product-about-rating__label"></label>
+                                            <input id="product-about-rating__4" type="radio" class="product-about-rating__item" name="product-about-rating" value="4">
+                                            <label for="product-about-rating__4" class="product-about-rating__label"></label>
+                                            <input id="product-about-rating__3" type="radio" class="product-about-rating__item" name="product-about-rating" value="3">
+                                            <label for="product-about-rating__3" class="product-about-rating__label"></label>
+                                            <input id="product-about-rating__2" type="radio" class="product-about-rating__item" name="product-about-rating" value="2">
+                                            <label for="product-about-rating__2" class="product-about-rating__label"></label>
+                                            <input id="product-about-rating__1" type="radio" class="product-about-rating__item" name="product-about-rating" value="1">
+                                            <label for="product-about-rating__1" class="product-about-rating__label"></label>
+                                        </div>
+                                        <span class="product-about-rating__responces">54 отзыва</span>
+                                    </div>
+                                </div>
+
+                                <div class="product-info_right">
+                                    
+    
+                                    <div class="product-about__networks">
+                                        <ul class="product-networks">
+                                            <li class="network network-facebook">
+                                                <span class="icon-facebook"></span>
+                                            </li>
+                                            <li class="network network-vk">
+                                                <span class="icon-vk"></span>
+                                            </li>
+                                            <li class="network network-google">
+                                                <span class="icon-google"></span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="product-about__sizes">
+                                <p class="product-about__size-title">Размеры</p>
+                                <div class="product-about__size-buttons">
+                                    <div class="product-about__star">
+                                        <input id="radio-1" class="radio-size" type="radio" name="radio" value="1" checked>
+                                        <label for="radio-1">35</label>
+                                    </div>
+                                     
+                                    <div class="product-about__star">
+                                        <input id="radio-2" class="radio-size" type="radio" name="radio" value="2">
+                                        <label for="radio-2">36</label>
+                                    </div>
+                                     
+                                    <div class="product-about__star">
+                                        <input id="radio-3" class="radio-size" type="radio" name="radio" value="3">
+                                        <label for="radio-3">37</label>
+                                    </div>
+
+                                    <div class="product-about__star">
+                                        <input id="radio-4" class="radio-size" type="radio" name="radio" value="4">
+                                        <label for="radio-4">38</label>
+                                    </div>
+
+                                    <div class="product-about__star">
+                                        <input id="radio-5" class="radio-size" type="radio" name="radio" value="5">
+                                        <label for="radio-5">39</label>
+                                    </div>
+
+                                    <div class="product-about__star">
+                                        <input id="radio-6" class="radio-size" type="radio" name="radio" value="6">
+                                        <label for="radio-6">40</label>
+                                    </div>
+
+                                    <div class="product-about__star">
+                                        <input id="radio-7" class="radio-size" type="radio" name="radio" value="7">
+                                        <label for="radio-7">41</label>
+                                    </div>
+
+                                    <div class="product-about__star">
+                                        <input id="radio-8" class="radio-size" type="radio" name="radio" value="8">
+                                        <label for="radio-8">42</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="product-details">
+                            <div class="product-details__left">
+                                <ul class="product-statuses">
+                                    <li class="product-statuses__item">
+                                        <span class="product__status">В наличии!</span>
+                                        <span class="product__code">Код товара: 382743</span>
+                                    </li>
+                                </ul>
+        
+                                <div class="product-buy">
+                                    <ul class="product-buttons">
+                                        <li class="product-buttons__item"><button class="buy-button">Купить</button></li>
+                                        <li class="product-buttons__item"><button class="wish-button"><span class="icon-heart-o"></span></button></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="product-details__right">
+                                <ul class="product-quality">
+                                    <li class="product-delivery">
+                                        <span>Бесплатная доставка!</span>
+                                    </li>
+                                    <li class="product-guarantee">
+                                        <span>Гарантия</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="product-characteristics-list">
+                            <input type="checkbox" class="read-more-checker" id="read-more-checker">
+                            <div class="product-characteristics-list__limited">
+                                <h4 class="product-characteristics-list__title">Описание товара</h4>
+                                <p class="product-characteristics-list__description">
+                                    Из этой прекрасной двухэтажной виллы (LEGO № 5771) из серии LEGO Creator можно  К тому же из виллы можно собрать еще два других дома.
+                                    На площадке для гриля житель этого дома может отлично отдохнуть вместе со своим псом. Дверной звонок на вилле работает и сопровождается собачьим лаем.
+                                    К тому же из виллы можно собрать еще два других дома.<br>
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit numquam laudantium, placeat velit provident itaque esse corrupti totam expedita perferendis ducimus illo distinctio error, recusandae non ullam neque, harum suscipit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Id soluta voluptatum optio dolorum harum mollitia distinctio suscipit quasi quis, eos molestiae consectetur, deserunt minima non fuga, quaerat maiores? Incidunt, sapiente. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est sed odit vero facere! Dolor necessitatibus veritatis atque tempore architecto, accusamus temporibus deserunt molestias vel magni reiciendis odio pariatur maiores magnam?
+                                </p>
+                            </div>
+                            <label for="read-more-checker" class="read-more-button"></label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div class="popup">
+        <div class="popup__body">
+            <div class="popup__content">
+                <span class="popup__close icon-cross"></span>
+                <form action="https://www.google.com/" class="popup__form" method="post">
+                    <p class="popup__description">Для входа в личный кабинет введите ваши данные</p>
+                    <input name="text" required class="popup__text" placeholder="Ваш логин">
+                    <input name="phone" class="popup__phone" placeholder="Номер телефона">
+                    <div class="popup__password-wrapper">
+                        <input name="password" type="Password" class="popup__password" placeholder="Пароль">
+                        <span class="icon-eye"></span>
+                    </div>
+                    <input name="submit" type="submit" class="popup__submit">
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="popup popup-callback">
+        <div class="popup__body popup-callback-body">
+            <div class="popup__content">
+                <span class="popup__close icon-cross"></span>
+                <form id="callback-form" action="https://www.google.com/" class="popup__form" method="post">
+                    <p class="popup__description">Для заказа обратного звонка введите ваши данные</p>
+                    <input name="text" required class="popup__text" placeholder="Ваше имя">
+                    <input name="phone" class="popup__phone" placeholder="Номер телефона">
+                    <input name="submit" type="submit" class="popup__submit">
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="popup popup-carousel">
+        <div class="popup__body popup-carousel-body">
+            <div class="popup__content popup-carousel__content"></div>
+        </div>
+    </div>
+
+    <div id="burger" class="burger">
+        <div class="burger__btn">
+            <span class="icon-menu"></span>
+        </div>  
+        <div class="burger__list">
+          <span class="burger__item">Главная</span>
+          <span class="burger__item">Baby клуб</span>
+          <span class="burger__item">Каталог товаров</span>
+          <span class="burger__item">Доставка и оплата</span>
+          <span class="burger__item">Новости</span>
+          <span class="burger__item">О нас</span>
+          <span class="burger__item">Контакты</span>
+        </div>
+    </div>         
+
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
